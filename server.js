@@ -7,7 +7,7 @@ var socketio = require("socket.io")(http);
 
 app.use(express.static(__dirname+"/public"));
 
-socketio.on("connection",function(){
+socketio.on('connection',function(){
     console.log("connection event");
 });
 http.listen(PORT,function(){
